@@ -29,14 +29,14 @@
 			<%
 				for(Map m : list){
 			%>
-				<tr>
-					<td><%=m.get("storeId")%></td>
-					<td><%=m.get("staffId")%></td>
-					<td><%=m.get("staffName")%></td>
-					<td><%=m.get("addressId")%></td>
-					<td><%=m.get("staffAddress")%></td>
-					<td><%=m.get("lastUpdate")%></td>
-				</tr>
+					<tr>
+						<td><%=m.get("storeId")%></td>
+						<td><%=m.get("staffId")%></td>
+						<td><%=m.get("staffName")%></td>
+						<td><%=m.get("addressId")%></td>
+						<td><%=m.get("staffAddress")%></td>
+						<td><%=m.get("lastUpdate")%></td>
+					</tr>
 			<%
 				}
 			%>
