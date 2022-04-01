@@ -2,44 +2,54 @@
 <%@ page import = "java.util.*" %>
 <%@ page import = "dao.*" %>
 <%
-	StoreDao storeDao = new StoreDao();
-	List<Map<String, Object>> list = storeDao.selectStoreList();
+	StaffDao staffDao = new StaffDao();
+	List<Map<String, Object>> staffList = staffDao.selectStaffList();
 %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Store List</title>
+<title>Staff List</title>
 	<!-- bootstrap 4 불러와서 사용하겠음 -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="container"><!-- 화면(고정너비 컨텐츠 사용할거임) -->
 		<a href="<%=request.getContextPath()%>/index.jsp" class="btn btn-secondary" role="button">index</a>
-		<div class ="container p-3 my-3 bg-dark text-white"> <!-- 상단타이틀 -->
-			<h1>Store List</h1>
+		<div class ="container p-3 my-3 bg-dark text-white">
+			<h1>Staff List</h1>
 		</div>
-		<table  class="table table-hover">
+		<table class="table table-hover">
 			<thead>
 				<tr class = "table-primary">
-					<th>storeId</th>
 					<th>staffId</th>
+					<th>storeId</th>
 					<th>staffName</th>
 					<th>addressId</th>
+					<th>picture</th>
 					<th>staffAddress</th>
+					<th>email</th>
+					<th>active</th>
+					<th>username</th>
+					<th>password</th>
 					<th>lastUpdate</th>
 				</tr>
 			</thead>
 			<tbody>
 				<%
-					for(Map m : list){
+					for(Map m : staffList){
 				%>
-						<tr class ="table-danger">
-							<td><%=m.get("storeId")%></td>
+						<tr class = "table-warning">
 							<td><%=m.get("staffId")%></td>
+							<td><%=m.get("storeId")%></td>
 							<td><%=m.get("staffName")%></td>
 							<td><%=m.get("addressId")%></td>
+							<td><%=m.get("picture")%></td>
 							<td><%=m.get("staffAddress")%></td>
+							<td><%=m.get("email")%></td>
+							<td><%=m.get("active")%></td>
+							<td><%=m.get("username")%></td>
+							<td><%=m.get("password")%></td>
 							<td><%=m.get("lastUpdate")%></td>
 						</tr>
 				<%
