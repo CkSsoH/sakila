@@ -14,6 +14,7 @@
 		</div>
 		<a href="<%=request.getContextPath()%>/storeList.jsp" class="btn btn-outline-primary" role="button">Store List</a>
 		<a href="<%=request.getContextPath()%>/staffList.jsp" class="btn btn-outline-success" role="button">Staff List</a>
+		<a href="<%=request.getContextPath()%>/actorInfoList.jsp" class="btn btn-outline-warning" role="button">ActorInfo List</a>
 	</div>
 </body>
 </html>

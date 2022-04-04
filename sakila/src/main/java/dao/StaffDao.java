@@ -1,6 +1,9 @@
 package dao;
 
 import java.util.*;
+
+import util.DBUtil;
+
 import java.sql.*;
 
 public class StaffDao {
@@ -10,8 +13,10 @@ public class StaffDao {
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
 		try {
-			Class.forName("org.mariadb.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/sakila","root","java1234");
+			//Class.forName("org.mariadb.jdbc.Driver");
+			//conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/sakila","root","java1234");
+			// pw가 변경되도 DBUtil 내부 getConnection에서 변경만 하면 되도록 util.DBUtil을 만듬
+			conn = DBUtil.getConnection();
 			String sql = "SELECT"
 					+ "	 sta.staff_id staffId,"
 					+ "	 sto.store_id storeId,"
