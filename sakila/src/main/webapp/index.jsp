@@ -13,18 +13,24 @@
 			<h1>INDEX</h1>
 		</div>
 		<div class="btn-group-vertical">
-			<a href="<%=request.getContextPath()%>/storeList.jsp" class="btn btn-outline-primary" role="button">Store List</a>
-			<a href="<%=request.getContextPath()%>/staffList.jsp" class="btn btn-outline-primary" role="button">Staff List</a>
+			<a href="<%=request.getContextPath()%>/storeList.jsp" class="btn btn-outline-danger" role="button">Store List</a>
+			<a href="<%=request.getContextPath()%>/staffList.jsp" class="btn btn-outline-danger" role="button">Staff List</a>
 		</div>
-		<h3>view List</h3>
+		<h3>view</h3>
 		<div class="btn-group-vertical">
-			<a href="<%=request.getContextPath()%>/actorInfoList.jsp" class="btn btn-outline-success" role="button">actorInfo List (view)</a>
-			<a href="<%=request.getContextPath()%>/customerList.jsp" class="btn btn-outline-success" role="button">customerList(view)</a>
-			<a href="<%=request.getContextPath()%>/filmList.jsp" class="btn btn-outline-success" role="button">filmList(view)</a>
-			<a href="<%=request.getContextPath()%>/nicerButSlowerFilmList.jsp" class="btn btn-outline-success" role="button">nicerButSlowerFilmList(view)</a>
-			<a href="<%=request.getContextPath()%>/salesByFilmCategory.jsp" class="btn btn-outline-success" role="button">salesByFilmCategory(view)</a>
-			<a href="<%=request.getContextPath()%>/salesByStore.jsp" class="btn btn-outline-success" role="button">salesByStore(view)</a>
-			<a href="<%=request.getContextPath()%>/staffListView.jsp" class="btn btn-outline-success" role="button">staffList(view)</a>
+			<a href="<%=request.getContextPath()%>/actorInfoList.jsp" class="btn btn-outline-warning" role="button">actorInfo List (view)</a>
+			<a href="<%=request.getContextPath()%>/customerList.jsp" class="btn btn-outline-warning" role="button">customerList(view)</a>
+			<a href="<%=request.getContextPath()%>/filmList.jsp" class="btn btn-outline-warning" role="button">filmList(view)</a>
+			<a href="<%=request.getContextPath()%>/nicerButSlowerFilmList.jsp" class="btn btn-outline-warning" role="button">nicerButSlowerFilmList(view)</a>
+			<a href="<%=request.getContextPath()%>/salesByFilmCategory.jsp" class="btn btn-outline-warning" role="button">salesByFilmCategory(view)</a>
+			<a href="<%=request.getContextPath()%>/salesByStore.jsp" class="btn btn-outline-warning" role="button">salesByStore(view)</a>
+			<a href="<%=request.getContextPath()%>/staffListView.jsp" class="btn btn-outline-warning" role="button">staffList(view)</a>
+		</div>
+		<h3>procedure</h3>
+		<div class="btn-group-vertical">
+			<a href="<%=request.getContextPath()%>/filmInStock.jsp" class="btn btn-outline-secondary" role="button">filmInStock</a>
+			<a href="<%=request.getContextPath()%>/filmNotInStock.jsp" class="btn btn-outline-secondary" role="button">filmNotInStock</a>
+			<a href="<%=request.getContextPath()%>/rewardsReport.jsp" class="btn btn-outline-secondary" role="button">rewardsReport</a>
 		</div>
 	</div>
 </body>

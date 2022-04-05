@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import = "java.util.*" %>
-<%@ page import = "dao.*" %>
+<%@ page import = "dao.StaffDao" %>
 <%
 	StaffDao staffDao = new StaffDao();
 	List<Map<String, Object>> staffList = staffDao.selectStaffList();
@@ -39,7 +39,7 @@
 				<%
 					for(Map m : staffList){
 				%>
-						<tr class = "table-warning">
+						<tr class = "table-danger">
 							<td><%=m.get("staffId")%></td>
 							<td><%=m.get("storeId")%></td>
 							<td><%=m.get("staffName")%></td>
