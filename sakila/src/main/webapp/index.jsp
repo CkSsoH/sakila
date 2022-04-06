@@ -12,11 +12,12 @@
 		<div class ="container p-3 my-3 bg-dark text-white">
 			<h1>INDEX</h1>
 		</div>
+		<h3>table list</h3>
 		<div class="btn-group-vertical">
 			<a href="<%=request.getContextPath()%>/storeList.jsp" class="btn btn-outline-danger" role="button">Store List</a>
 			<a href="<%=request.getContextPath()%>/staffList.jsp" class="btn btn-outline-danger" role="button">Staff List</a>
 		</div>
-		<h3>view</h3>
+		<h3>view list</h3>
 		<div class="btn-group-vertical">
 			<a href="<%=request.getContextPath()%>/actorInfoList.jsp" class="btn btn-outline-warning" role="button">actorInfo List (view)</a>
 			<a href="<%=request.getContextPath()%>/customerList.jsp" class="btn btn-outline-warning" role="button">customerList(view)</a>
@@ -26,11 +27,15 @@
 			<a href="<%=request.getContextPath()%>/salesByStore.jsp" class="btn btn-outline-warning" role="button">salesByStore(view)</a>
 			<a href="<%=request.getContextPath()%>/staffListView.jsp" class="btn btn-outline-warning" role="button">staffList(view)</a>
 		</div>
-		<h3>procedure</h3>
+		<h3>procedure list</h3>
 		<div class="btn-group-vertical">
 			<a href="<%=request.getContextPath()%>/filmInStock.jsp" class="btn btn-outline-secondary" role="button">filmInStock</a>
 			<a href="<%=request.getContextPath()%>/filmNotInStock.jsp" class="btn btn-outline-secondary" role="button">filmNotInStock</a>
 			<a href="<%=request.getContextPath()%>/rewardsReport.jsp" class="btn btn-outline-secondary" role="button">rewardsReport</a>
+		</div>
+		<h3>film Search</h3>
+		<div class="btn-group-vertical">
+		<a href="<%=request.getContextPath()%>/filmSearchForm.jsp" class="btn btn-outline-success" role="button">filmSearchForm</a>
 		</div>
 	</div>
 </body>

@@ -4,7 +4,7 @@
 <%@ page import = "dao.FilmDao" %>
 <%@ page import = "java.util.*" %>
 <%
-	FilmDao fd = new FilmDao();
+FilmDao fd = new FilmDao();
 	Map<String,Object> map =new HashMap<>();
 	
 	int filmId = 0;
@@ -26,7 +26,6 @@
 	List<Integer> list = (List<Integer>)(map.get("list"));
 	int count =0;
 	count = (Integer)(map.get("count"));
-	
 %>
 <!DOCTYPE html>
 <html>

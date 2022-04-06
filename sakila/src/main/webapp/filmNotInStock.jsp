@@ -26,7 +26,6 @@
 	List<Integer> list = (List<Integer>)(map.get("list"));
 	int count =0;
 	count = (Integer)(map.get("count"));
-	
 %>
 <!DOCTYPE html>
 <html>
