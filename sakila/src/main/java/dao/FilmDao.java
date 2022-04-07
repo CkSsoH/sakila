@@ -114,6 +114,7 @@ public class FilmDao {
 		map.put("count", count);
 		return map;
 	}
+
 	public static void main(String[] args) {
 		FilmDao fd = new FilmDao();
 		int filmId = 7;
@@ -127,7 +128,7 @@ public class FilmDao {
 			System.out.println(id);
 		}
 	}
-	
+
 	public Map<String, Object> filmNotInStockCall(int filmId, int storeId) {
 		Map<String, Object> map = new HashMap<String, Object>();
 		Connection conn = null;
@@ -550,5 +551,6 @@ public class FilmDao {
 			}
 		}
 		return totalCount;
-		}	
+		}
+	
 }

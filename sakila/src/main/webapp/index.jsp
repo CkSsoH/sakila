@@ -35,8 +35,12 @@
 		</div>
 		<h3>film Search</h3>
 		<div class="btn-group-vertical">
-		<a href="<%=request.getContextPath()%>/filmSearchForm.jsp" class="btn btn-outline-success" role="button">filmSearchForm</a>
-		<a href="<%=request.getContextPath()%>/rentalSearchForm.jsp" class="btn btn-outline-success" role="button">rentalSearchForm</a>
+			<a href="<%=request.getContextPath()%>/filmSearchForm.jsp" class="btn btn-outline-success" role="button">filmSearchForm</a>
+			<a href="<%=request.getContextPath()%>/rentalSearchForm.jsp" class="btn btn-outline-success" role="button">rentalSearchForm</a>
+		</div>
+		<h3>통계 데이터</h3>
+		<div class="btn-group-vertical">
+
 		</div>
 	</div>
 </body>
