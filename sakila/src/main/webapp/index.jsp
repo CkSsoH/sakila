@@ -36,6 +36,7 @@
 		<h3>film Search</h3>
 		<div class="btn-group-vertical">
 		<a href="<%=request.getContextPath()%>/filmSearchForm.jsp" class="btn btn-outline-success" role="button">filmSearchForm</a>
+		<a href="<%=request.getContextPath()%>/rentalSearchForm.jsp" class="btn btn-outline-success" role="button">rentalSearchForm</a>
 		</div>
 	</div>
 </body>

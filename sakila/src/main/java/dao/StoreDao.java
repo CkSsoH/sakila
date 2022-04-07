@@ -5,6 +5,11 @@ import util.DBUtil;
 import java.sql.*;
 
 public class StoreDao {
+	public List<Integer> selectStoreIdList(){
+		List<Integer> list = new ArrayList<Integer>();
+		return list; // 1,2 떨어질거임 매장이 두개여서
+	}
+	
 	public List<Map<String, Object>> selectStoreList() {
 		List<Map<String, Object>> list = new ArrayList<>(); // 다형성
 		Connection conn = null;
