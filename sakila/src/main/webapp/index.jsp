@@ -40,7 +40,7 @@
 		</div>
 		<h3>통계 데이터</h3>
 		<div class="btn-group-vertical">
-
+			<a href="<%=request.getContextPath()%>/statsData.jsp" class="btn btn-outline-info" role="button">statsData</a>
 		</div>
 	</div>
 </body>
